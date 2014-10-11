@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IFleet : Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/d41d8cd98f00b204e9800998ecf8427e.css">
+    <link rel="stylesheet" href="css/global-style.css">
+    <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="js/jlibrary.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="src/DateTimePicker.css" />
+    <script type="text/javascript" src="src/DateTimePicker.js"></script> 
+	
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
+			<script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
+		<![endif]-->
+ 
+</head>
+
+<body>
+    
+   <div style="height:75px;width:100%;border-bottom: 1px solid #e1e1e1;background-color:white;">
+        <div class="container center-block navbar" role="navigation" style="padding-top:20px;">
+       <img id="inland-logo" src="images/new_inlandlogo.png" height="50" style="margin-top:-7px;">
+        
+            
+            
+        
+            <div class="btn-group" style="margin-left:40px;">
+                
+                  <button id="menu-home" type="button" class="btn btn-default navbar-btn" style="border: none; outline:none;margin-top:5px;">
+                  <span class="glyphicon glyphicon-home"></span> <span class="hidden-xs">Home</span></button> 
+             </div>
+             <div class="btn-group">
+               
+                  <button type="button" class="btn btn-info navbar-btn dropdown-toggle active" data-toggle="dropdown" style="border: none; outline:none;">
+                     <span class="glyphicon glyphicon-transfer"></span> <span class="hidden-xs">Transaction </span><span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu multi-level" role="menu">
+                    <li role="presentation" class="dropdown-header">Booking</li>
+                    <li><a id="menu-booking-CN" href="#">Create New</a></li>
+                    <li><a id="menu-booking-AL" href="#">All Listing</a></li>
+                    <li class="divider"></li>
+                    <li role="presentation" class="dropdown-header">Receiving</li>
+    
+                   <li class="dropdown-submenu">
+                    <a tabindex="-1" href="#">EIR</a>
+                    <ul class="dropdown-menu">
+                        <li><a id="menu-eir-CN" href="#" tabindex="-1">Create New</a></li>
+                        <li><a id="menu-eir-AL" href="#">All Listing</a></li>
+                    </ul>
+                    </li>
+                 </ul>
+
+            </div>
+             <div class="btn-group">
+                  <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
+                  <span class="glyphicon glyphicon-wrench"></span> <span class="hidden-xs">Maintenance</span> <span class="caret"></span></button>
+                 <ul class="dropdown-menu multi-level" role="menu">
+                    <li><a id="menu-maintenance-DH" href="#">Driver/Helper</a></li>
+                    <li><a id="menu-maintenance-chassis" href="#">Chassis</a></li>
+                 </ul>
+             </div>
+            <div class="btn-group">
+                  <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
+                  <span class="glyphicon glyphicon-folder-open" style="padding-right:5px;"></span><span class="hidden-xs"> Report  </span><span class="caret" style="margin-left:5px;"></span></button>
+                  <ul class="dropdown-menu multi-level" role="menu">
+                      <li><a id="menu-report-container" href="#">Container</a></li>
+                      <li><a id="menu-report-chassis" href="#">Chassis</a></li>
+                      <li><a id="menu-report-ContainerAging" href="#">Container Aging</a></li>
+                      <li><a id="menu-report-ChassisAging" href="#">Chassis Aging</a></li>
+                  </ul>
+             </div>
+
+    <div class="btn-group pull-right">
+        <button type="button" class="btn btn-default" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></button>
+        
+                  <ul class="dropdown-menu multi-level" role="menu">
+                    <li role="presentation" class="dropdown-header">Preferences</li>
+                    <li><a id="menu-password" href="#">Change Password</a></li>
+                 </ul>
+        
+        <button type="button" class="btn btn-default" style="background-color: #7c858f;color:white;border: 1px solid #7c858f;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-off"></span></button>
+    </div>
+          <p class="navbar-text navbar-right visible-lg" style="margin-top:9px;padding-right:10px;">Signed in as <span id="USERNAME VAR"><a href="#" class="navbar-link">Rex Cabarloc</a></span></p>    
+    
+        </div>
+    </div>
+    
+<!------------ End Template ---------------->  
+    
+<div id="booking-container" class="container">    
+ <div id="error-message" class="alert alert-warning alert-dismissible" role="alert" style="margin-top:30px;display:none;">
+  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  <strong>Warning!</strong>
+</div>
+<div id="main-container" class="roundtify clearfix-lg" style="margin:auto;background-color:#ffffff;border: 1px solid #d6d6d6;margin-top:40px;margin-bottom:40px;">
+  
+    
+     <div style="padding-left:20px;padding-right:20px;border-bottom: 1px solid #e1e1e1;">   
+    <h3>EIR<span class="glyphicon glyphicon-chevron-right" style="font-size:0.6em;padding-left:5px;vertical-align: 2px;"></span><span style="padding-left:8px;">Create</span>  <span class="glyphicon glyphicon-tasks pull-right"></span></h3>
+    </div>
+    
+
+    
+    <div id="Container-tab" style="height:100%px;"> <!--CONTAINER TAB START-->
+          <center>
+            <h1><span class="glyphicon glyphicon-th-large"></span> Container</h1>
+        <div class="btn-group" style="margin:auto;margin-top:5px;">
+          <button type="button" class="Container-Button btn btn-primary active"><span class="glyphicon glyphicon-th-large"></span> Container</button>
+          <button type="button" class="Chassis-Button btn btn-default"> Chassis</button>
+         
+        </div>
+         </center>
+        
+      <div id="form-contents" style="width:95%;height:100%px;margin:auto;margin-top:-15px;margin-bottom:40px;border: 1px solid #e1e1e1;">
+    
+         <div style="padding-left:20px;padding-top:20px;padding-bottom:30px;">
+        <h4>EIR Details</h4>
+            <form id="FORM NAME" name="FORM NAME" role="form" method="post" action="SCRIPT ACTION"> 
+                <table align="center">
+                    <tr>
+                    <td width="120">Booking Number :</td>
+                    <td>
+                        <div class="input-group">
+                          <input id="Container-BookingNo" type="text" class="form-control focusedInput" style="width:300px;">
+                          <span class="input-group-btn">
+                            <button id="get-DRInfo" name="get-DRInfo" class="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                          </span>
+                        </div>
+                    </td>
+                    </tr>
+                </table>
+            </form>
+             <center>
+             <div class="radio" style="height:10pxmargin:auto;padding-top:20px;">
+              <label style="padding-right:20px;">
+                <input id="Container-rdoIN" type="radio" name="optionsRadios" value="">
+               <b>In</b>
+              </label>
+             <label>
+                <input id="Container-rdoOUT" type="radio" name="optionsRadios" value="">
+               <b>Out</b>
+              </label>
+            </div>
+            </center>
+            
+             
+             <form id="FORM NAME" name="FORM NAME" role="form" method="post" action="SCRIPT ACTION">
+        <table align="center" style="margin-top:30px;">
+            <tr>
+                <td width="150">EIR No. :</td>
+                <td width="250"><input id="Container-EIR" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td width="50"></td>
+                <td width="150">Driver :</td>
+                <td>
+                    <select id="Container-Driver" class="form-control" style="width:250px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+                </td>
+                <td><input id="others-enabler" type="checkbox" style="margin-left:5px;"> Is Subcon?</td>
+            </tr>
+            <tr height="10"></tr>
+           <tr>
+                <td width="120">Consignee/Shipper :</td>
+                <td><input id="Container-ConsigneeShipper" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td width="50"></td>
+                <td width="120">Checker/Coordinator :</td>
+                <td>
+                <select id="Container-CheckerCoordinator" class="form-control" style="width:250px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+               </td>
+            </tr>
+             <tr height="10"></tr>
+           <tr>
+                <td width="120">Address :</td>
+                <td><input id="Address" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td width="50"></td>
+                <td width="120">Place of Interchange :</td>
+                <td>
+                    <select id="POI" class="form-control" style="width:250px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+                </td>
+            </tr>
+             <tr height="10"></tr>
+           <tr>
+                <td width="120">Transaction Type :</td>
+                <td><input id="Container-TransType" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td width="50"></td>
+                <td width="120">Date/Time of Interchange :</td>
+                <td>
+               <div class="input-group" style="width:250px;">
+                      <input id="DTOI" type="text" data-field="datetime" date-format="" data-view="Dropdown" class="form-control" style="width:212px;border-right: 0px;">
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+                  </div>   
+               </td>
+            </tr>
+             <tr height="10"></tr>
+           <tr>
+                <td width="120">Trucking :</td>
+                <td>
+                <select id="Container-Trucking" class="form-control">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+               </td>
+                <td width="50"></td>
+                <td width="120">Plate No. :</td>
+                <td> <select id="Container-PlateNo" class="form-control" style="width:250px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select></td>
+            </tr>
+             
+           
+        </table>
+         <h4 style="padding-top:10px;">Container Details</h4>
+        
+        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+            <th>Container No.</th>
+            <th>Container type</th>
+            <th>Size</th>
+            <th>Seal No.</th>
+            <th>Status</th>
+            <tr>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+                <td>Sample Data</td>
+            </tr>
+        </table>
+        
+        <table align="center" style="margin-top:30px;">
+            <tr>
+                <td width="150">Remarks :</td>
+                <td> 
+                    <select id="Container-Remarks" name="Shipping-Line" class="form-control" style="width:300px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+                </td>
+               
+            </tr>
+            <tr height="10"></tr>
+              <tr>
+                <td width="150"><input id="Container-others-enabler" type="checkbox"> Others :</td>
+                <td><textarea id="Container-Other" class="form-control" rows="4" style="width:800px;"></textarea></td>
+               
+            </tr>
+        </table>
+        
+         </div>
+             <div class="modal-footer">
+        <button type="submit" class="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</button>
+        <button type="button" class="btn btn-default">Cancel</button>
+      </div>  
+    </form>
+    </div>
+</div> <!-- END OF CONTAINER TAB -->   
+ 
+    
+  <div id="Chassis-tab" style="height:100%px;display:none;"> <!--CHASSIS TAB START-->
+          <center>
+            <h1><span class="glyphicon glyphicon-road"></span> Chassis</h1>
+        <div class="btn-group" style="margin:auto;margin-top:5px;">
+          <button type="button" class="Container-Button btn btn-default"> Container</button>
+          <button type="button" class="Chassis-Button btn btn-primary active"><span class="glyphicon glyphicon-road"></span> Chassis</button>
+         
+        </div>
+         </center>
+        
+      <div id="form-contents" style="width:95%;height:100%px;margin:auto;margin-top:-15px;margin-bottom:40px;border: 1px solid #e1e1e1;">
+    
+         <div style="padding-left:20px;padding-top:20px;padding-bottom:30px;">
+        <h4>EIR Details</h4>
+            <form id="FORM NAME" name="FORM NAME" role="form" method="post" action="SCRIPT ACTION"> 
+                <table align="center">
+                    <tr>
+                    <td width="120">Booking Number :</td>
+                    <td>
+                        <div class="input-group">
+                          <input id="Chassis-BookingNo" type="text" class="form-control focusedInput" style="width:300px;">
+                          <span class="input-group-btn">
+                            <button id="get-DRInfo" name="get-DRInfo" class="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                          </span>
+                        </div>
+                    </td>
+                    </tr>
+                </table>
+            </form>
+             <center>
+             <div class="radio" style="height:10pxmargin:auto;padding-top:20px;">
+              <label style="padding-right:20px;">
+                <input id="Container-rdoIN" type="radio" name="optionsRadios" value="">
+               <b>In</b>
+              </label>
+             <label>
+                <input id="Container-rdoOUT" type="radio" name="optionsRadios" value="">
+               <b>Out</b>
+              </label>
+            </div>
+            </center>
+            
+             
+             <form id="FORM NAME" name="FORM NAME" role="form" method="post" action="SCRIPT ACTION">
+        <table align="center" style="margin-top:30px;">
+            <tr>
+                <td width="150">EIR No. :</td>
+                <td><input id="Chassis-EIR" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td width="50"></td>
+                <td width="150">Chassis No :</td>
+                <td>
+                    <select id="Chassis-ChassisNo" class="form-control" style="width:250px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr height="10"></tr>
+           <tr>
+                <td width="120">Consignee/Shipper :</td>
+                <td><input id="Container-ConsigneeShipper" type="text" class="form-control" disabled></td>
+                <td width="50"></td>
+                <td width="120">Size :</td>
+                <td>
+                <input id="Container-ConsigneeShipper" type="text" class="form-control" disabled style="width:250px;">
+               </td>
+            </tr>
+             <tr height="10"></tr>
+           <tr>
+                <td width="120">Transaction Type :</td>
+                <td><input id="Chassis-TransaType" type="text" class="form-control" disabled></td>
+                <td width="50"></td>
+                <td width="120">Driver :</td>
+                <td>
+                    <select id="Chassis-Driver" class="form-control" style="width:250px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+                </td>
+               <td> <input type="checkbox" style="margin-left:5px;"> is Subcon?</td>
+            </tr>
+             <tr height="10"></tr>
+           <tr>
+                <td width="120">Trucking :</td>
+                <td> <select id="Chassis-Driver" class="form-control">
+                      <option>DB bind (Dropdown)</option>
+                    </select></td>
+                <td width="50"></td>
+                <td width="120">Date/Time of Interchange :</td>
+                <td>
+                    <div class="input-group" style="width:250px;">
+                      <input id="DOD" name="DOD" type="text" data-field="datetime" date-format="" data-view="Dropdown" class="form-control" style="width:212px;border-right: 0px;">
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+                  </div>   
+               </td>
+            </tr>
+             <tr height="10"></tr>
+           <tr>
+                <td width="120">Plate No. :</td>
+                <td>
+                <select id="Chassis-PlateNo" class="form-control">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+               </td>
+                <td width="50"></td>
+                <td width="120">Place of  Interchange :</td>
+                <td> <select id="Chassis-POI" class="form-control" style="width:250px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select></td>
+            </tr>
+             <tr height="10"></tr>
+           <tr>
+                <td width="120">Received From :</td>
+                <td>
+               <input id="Chassis-ReceivedFrom" type="text" class="form-control">
+               </td>
+                <td width="50"></td>
+                <td width="120">Delivered To :</td>
+                <td><input id="Chassis-DeliveredTo" type="text" class="form-control" style="width:250px;"></td>
+            </tr>           
+            <tr height="10"></tr>
+           <tr>
+                <td width="120">Checker/Coordinator :</td>
+                <td>
+                <select id="Chassis-CheckerCoordinator" class="form-control">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+               </td>
+            </tr>        
+             
+           
+        </table>
+         <h4 style="padding-top:10px;">Container Details</h4>
+        
+      
+      
+        
+        <table align="center" style="margin-top:30px;">
+            <tr>
+                <td width="150">Remarks :</td>
+                <td> 
+                    <select id="Chassis-Remarks" name="Shipping-Line" class="form-control" style="width:300px;">
+                      <option>DB bind (Dropdown)</option>
+                    </select>
+                </td>
+               
+            </tr>
+            <tr height="10"></tr>
+              <tr>
+                <td width="150"><input id="Chassis-others-enabler" type="checkbox"> Others :</td>
+                <td><textarea id="Chassis-Other" class="form-control" rows="4" style="width:800px;"></textarea></td>
+               
+            </tr>
+        </table>
+        
+         </div>
+             <div class="modal-footer">
+        <button type="submit" class="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</button>
+        <button type="button" class="btn btn-default">Cancel</button>
+      </div>  
+    </form>
+    </div>
+</div> <!-- END OF CHASSIS TAB -->   
+
+
+    
+    
+
+   
+    
+    
+    
+    
+</div> <!--main container-->
+</div> <!--main container-->
+  
+<div id="dtBox"></div>	
+		
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-body" style="height:220px;">
+          
+              <table border="0" align="center" style="margin-top:20px;">
+                <tr>
+                    <td width="130"><img src="images/power.png" height="100"></center></td>  
+                    <td width="20"><div style="height:150px;width:1px;background-color:#d1d1d1;"></div></td>
+                    <td><h3>Are you sure you want to logout?</h3>
+                    Make sure to save your work before logging out.</td>  
+                </tr>
+              </table>
+      </div>  
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Logout</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+<script src="js/bootstrap.min.js"></script>   
+</body>
+</html>
+    
