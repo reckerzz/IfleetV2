@@ -16,8 +16,8 @@
 
 <body>
     
-   <div style="height:75px;width:100%;border-bottom: 1px solid #e1e1e1;background-color:white;">
-        <div class="container center-block navbar" role="navigation" style="padding-top:20px;">
+   <div class="navigation-formatter">
+        <div class="container center-block navbar nav-addAttr" role="navigation">
        <img id="inland-logo" src="images/new_inlandlogo.png" height="50" style="margin-top:-7px;">
         
             
@@ -25,7 +25,7 @@
         
             <div class="btn-group" style="margin-left:40px;">
                 
-                  <button id="menu-home" type="button" class="btn btn-default navbar-btn" style="border: none; outline:none;margin-top:5px;">
+                  <button id="menu-home" type="button" class="btn btn-default" style="border: none; outline:none;">
                   <span class="glyphicon glyphicon-home"></span> <span class="hidden-xs">Home</span></button> 
              </div>
              <div class="btn-group">
@@ -51,7 +51,7 @@
 
             </div>
              <div class="btn-group">
-                  <button type="button" class="btn btn-info navbar-btn dropdown-toggle active" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
+                  <button type="button" class="btn navbar-btn dropdown-toggle active-styler" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
                   <span class="glyphicon glyphicon-wrench"></span> <span class="hidden-xs">Maintenance</span> <span class="caret"></span></button>
                  <ul class="dropdown-menu multi-level" role="menu">
                     <li><a id="menu-maintenance-DH" href="#">Driver/Helper</a></li>
@@ -69,7 +69,7 @@
                   </ul>
              </div>
 
-    <div class="btn-group pull-right">
+    <div class="btn-group pull-right mech-power-buttons">
         <button type="button" class="btn btn-default" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></button>
         
                   <ul class="dropdown-menu multi-level" role="menu">
@@ -79,7 +79,7 @@
         
         <button type="button" class="btn btn-default" style="background-color: #7c858f;color:white;border: 1px solid #7c858f;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-off"></span></button>
     </div>
-          <p class="navbar-text navbar-right visible-lg" style="margin-top:9px;padding-right:10px;">Signed in as <span id="USERNAME VAR"><a href="#" class="navbar-link">Rex Cabarloc</a></span></p>    
+          <p class="navbar-text navbar-right visible-lg Signed-user">Signed in as <span id="USERNAME VAR"><a href="#" class="navbar-link">Rex Cabarloc</a></span></p>    
     
         </div>
     </div>
