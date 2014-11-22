@@ -22,33 +22,33 @@
 </head>
 
 <body>
-  <div class="navigation-formatter">
-        <div class="container center-block navbar nav-addAttr" role="navigation">
+  <div CssClass="navigation-formatter">
+        <div CssClass="container center-block navbar nav-addAttr" role="navigation">
        <img id="inland-logo" src="images/new_inlandlogo.png" height="50" style="margin-top:-7px;">
         
             
             
         
-            <div class="btn-group" style="margin-left:40px;">
+            <div CssClass="btn-group" style="margin-left:40px;">
                 
-                  <button id="menu-home" type="button" class="btn btn-default" style="border: none; outline:none;">
-                  <span class="glyphicon glyphicon-home"></span> <span class="hidden-xs">Home</span></button> 
+                  <asp:LinkButton ID="" runat="server"  id="menu-home"  CssClass="btn btn-default" style="border: none; outline:none;">
+                  <span CssClass="glyphicon glyphicon-home"></span> <span CssClass="hidden-xs">Home</span></asp:LinkButton> 
              </div>
-             <div class="btn-group">
+             <div CssClass="btn-group">
                
-                  <button type="button" class="btn navbar-btn dropdown-toggle active-styler" data-toggle="dropdown" style="border: none; outline:none;">
-                     <span class="glyphicon glyphicon-transfer"></span> <span class="hidden-xs">Transaction </span><span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu multi-level" role="menu">
-                    <li role="presentation" class="dropdown-header">Booking</li>
+                  <asp:LinkButton ID="" runat="server"   CssClass="btn navbar-btn dropdown-toggle active-styler" data-toggle="dropdown" style="border: none; outline:none;">
+                     <span CssClass="glyphicon glyphicon-transfer"></span> <span CssClass="hidden-xs">Transaction </span><span CssClass="caret"></span>
+                  </asp:LinkButton>
+                  <ul CssClass="dropdown-menu multi-level" role="menu">
+                    <li role="presentation" CssClass="dropdown-header">Booking</li>
                     <li><a id="menu-booking-CN" href="#">Create New</a></li>
                     <li><a id="menu-booking-AL" href="#">All Listing</a></li>
-                    <li class="divider"></li>
-                    <li role="presentation" class="dropdown-header">Receiving</li>
+                    <li CssClass="divider"></li>
+                    <li role="presentation" CssClass="dropdown-header">Receiving</li>
     
-                   <li class="dropdown-submenu">
+                   <li CssClass="dropdown-submenu">
                     <a tabindex="-1" href="#">EIR</a>
-                    <ul class="dropdown-menu">
+                    <ul CssClass="dropdown-menu">
                         <li><a id="menu-eir-CN" tabindex="-1" href="#">Create New</a></li>
                         <li><a id="menu-eir-AL" href="#">All Listing</a></li>
                     </ul>
@@ -56,18 +56,18 @@
                  </ul>
 
             </div>
-             <div class="btn-group">
-                  <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
-                  <span class="glyphicon glyphicon-wrench"></span> <span class="hidden-xs">Maintenance</span> <span class="caret"></span></button>
-                 <ul class="dropdown-menu multi-level" role="menu">
+             <div CssClass="btn-group">
+                  <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
+                  <span CssClass="glyphicon glyphicon-wrench"></span> <span CssClass="hidden-xs">Maintenance</span> <span CssClass="caret"></span></asp:LinkButton>
+                 <ul CssClass="dropdown-menu multi-level" role="menu">
                     <li><a id="menu-maintenance-DH" href="#">Driver/Helper</a></li>
                     <li><a id="menu-maintenance-chassis" href="#">Chassis</a></li>
                  </ul>
              </div>
-            <div class="btn-group">
-                  <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
-                  <span class="glyphicon glyphicon-folder-open" style="padding-right:5px;"></span><span class="hidden-xs"> Report  </span><span class="caret" style="margin-left:5px;"></span></button>
-                  <ul class="dropdown-menu multi-level" role="menu">
+            <div CssClass="btn-group">
+                  <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
+                  <span CssClass="glyphicon glyphicon-folder-open" style="padding-right:5px;"></span><span CssClass="hidden-xs"> Report  </span><span CssClass="caret" style="margin-left:5px;"></span></asp:LinkButton>
+                  <ul CssClass="dropdown-menu multi-level" role="menu">
                       <li><a id="menu-report-container" href="#">Container</a></li>
                       <li><a id="menu-report-chassis" href="#">Chassis</a></li>
                       <li><a id="menu-report-ContainerAging" href="#">Container Aging</a></li>
@@ -75,46 +75,46 @@
                   </ul>
              </div>
 
-    <div class="btn-group pull-right mech-power-buttons">
-        <button type="button" class="btn btn-default" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></button>
+    <div CssClass="btn-group pull-right mech-power-buttons">
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" data-toggle="dropdown"><span CssClass="glyphicon glyphicon-cog"></span></asp:LinkButton>
         
-                  <ul class="dropdown-menu multi-level" role="menu">
-                    <li role="presentation" class="dropdown-header">Preferences</li>
+                  <ul CssClass="dropdown-menu multi-level" role="menu">
+                    <li role="presentation" CssClass="dropdown-header">Preferences</li>
                     <li><a id="menu-password" href="#">Change Password</a></li>
                  </ul>
         
-        <button type="button" class="btn btn-default" style="background-color: #7c858f;color:white;border: 1px solid #7c858f;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-off"></span></button>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" style="background-color: #7c858f;color:white;border: 1px solid #7c858f;" data-toggle="modal" data-target="#myModal"><span CssClass="glyphicon glyphicon-off"></span></asp:LinkButton>
     </div>
-          <p class="navbar-text navbar-right visible-lg Signed-user">Signed in as <span id="USERNAME VAR"><a href="#" class="navbar-link">Rex Cabarloc</a></span></p>    
+          <p CssClass="navbar-text navbar-right visible-lg Signed-user">Signed in as <span id="USERNAME VAR"><a href="#" CssClass="navbar-link">Rex Cabarloc</a></span></p>    
     
         </div>
     </div>
     
 <!------------ End Template ---------------->  
     
-<div id="booking-container" class="container">    
- <div id="error-message" class="alert alert-warning alert-dismissible" role="alert" style="margin-top:30px;display:none;">
-  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<div id="booking-container" CssClass="container">    
+ <div id="error-message" CssClass="alert alert-warning alert-dismissible" role="alert" style="margin-top:30px;display:none;">
+  <asp:LinkButton ID="" runat="server"   CssClass="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span CssClass="sr-only">Close</span></asp:LinkButton>
   <strong>Warning!</strong>
 </div>
-<div id="main-container" class="roundtify clearfix-lg" style="margin:auto;background-color:#ffffff;border: 1px solid #d6d6d6;margin-top:40px;margin-bottom:50px;">
+<div id="main-container" CssClass="roundtify clearfix-lg" style="margin:auto;background-color:#ffffff;border: 1px solid #d6d6d6;margin-top:40px;margin-bottom:50px;">
   
     
      <div style="padding-left:20px;padding-right:20px;border-bottom: 1px solid #e1e1e1;">   
-    <h3>Booking<span class="glyphicon glyphicon-chevron-right" style="font-size:0.6em;padding-left:5px;vertical-align: 2px;"></span><span style="padding-left:8px;">Create</span>  <span class="glyphicon glyphicon-tasks pull-right"></span></h3>
+    <h3>Booking<span CssClass="glyphicon glyphicon-chevron-right" style="font-size:0.6em;padding-left:5px;vertical-align: 2px;"></span><span style="padding-left:8px;">Create</span>  <span CssClass="glyphicon glyphicon-tasks pull-right"></span></h3>
     </div>
     
 
     
     <div id="Import-tab" style="height:100%px;"> <!--IMPORT TAB START-->
           <center>
-            <h1><span class="glyphicon glyphicon-log-in"></span> Import</h1>
-        <div class="btn-group" style="margin:auto;margin-top:5px;">
-          <button type="button" class="Import-Button btn btn-primary active"><span class="glyphicon glyphicon-log-in"></span> Import</button>
-          <button type="button" class="Export-Button btn btn-default"> Export</button>
-          <button type="button" class="Local-Button btn btn-default"> Local</button>
-          <button type="button" class="Hustling-Button btn btn-default"> Hustling</button>
-          <button type="button" class="Others-Button btn btn-default"> Others</button>
+            <h1><span CssClass="glyphicon glyphicon-log-in"></span> Import</h1>
+        <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+          <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-log-in"></span> Import</asp:LinkButton>
+          <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
+          <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"> Local</asp:LinkButton>
+          <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
+          <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-default"> Others</asp:LinkButton>
         </div>
          </center>
         
@@ -127,10 +127,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div class="input-group">
-                          <input id="Import-DRField" type="text" class="form-control focusedInput" style="width:300px;">
-                          <span class="input-group-btn">
-                            <button id="get-DRInfo" name="get-DRInfo" class="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        <div CssClass="input-group">
+                          <asp:TextBox ID="txtDRNumber" runat="server"  CssClass="form-control focusedInput" style="width:300px;"/>
+                          <span CssClass="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -142,62 +142,62 @@
         <table align="center" style="margin-top:30px;">
             <tr>
                 <td width="120">Booking No. :</td>
-                <td><input id="Import-BookingNo" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:TextBox ID="txtBookingNo" runat="server"  CssClass="form-control" style="width:300px;" disabled /></td>
                 <td width="50"></td>
                 <td width="120">IEIRD :</td>
-                <td><input id="Import-IEIRD" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:TextBox ID="txtIEIRD" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
             <tr height="10"></tr>
            <tr>
                 <td width="120">PRO Number :</td>
-                <td><input id="Import-PRONumber" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:TextBox ID="txtProNumber" runat="server" CssClass="form-control" style="width:300px;" /></td>
                 <td width="50"></td>
                 <td width="120">Date of Delivery :</td>
                 <td>
-               <div class="input-group">
-                      <input id="Import-DOD" type="text" data-field="date" date-format="" data-view="Dropdown" class="form-control" style="width:261px;border-right: 0px;">
-                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+               <div CssClass="input-group">
+                      <asp:TextBox ID="" runat="server" id="txtDOD" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
+                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
                   </div>   
                </td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">Address :</td>
-                <td><input id="Import-Address" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtAddress" runat="server" CssClass="form-control" style="width:300px;"/></td>
                 <td width="50"></td>
                 <td width="120">Shipping Lines :</td>
                 <td>
-                    <select id="Import-ShippingLine" class="form-control">
+                    <asp:Dropdown ID="ddlShippingLines" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">B/L No. :</td>
-                <td><input id="Import-BLNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtBLNo" runat="server" CssClass="form-control" style="width:300px;" /></td>
                 <td width="50"></td>
                 <td width="120">PO Number :</td>
-                <td><input id="Import-PONO" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtPONumber" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">Consignee :</td>
-                <td><input id="Import-Consignee" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtconSignee" runat="server" CssClass="form-control" style="width:300px;"/></td>
                 <td width="50"></td>
                 <td width="120">Commodity :</td>
-                <td><input id="Import-Commodity" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtCommodity" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">Vessel :</td>
-                <td><input id="Import-Vessel" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtVessel" runat="server" CssClass="form-control" style="width:300px;" /></td>
 
             </tr>
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Date of Pull Out</th>
             <th>Seal No.</th>
@@ -221,61 +221,61 @@
             <tr>
                 <td width="120">Trucking :</td>
                 <td width="200">
-                    <select id="Import-Trucking" class="form-control">
+                    <asp:Dropdown ID="ddlTrucking" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="130"></td>
                 <td width="140">Trip Type :</td>
-                <td><input id="Import-TripType"type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="ddlTripType" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td width="120">Plate Number :</td>
                 <td>
-                <select id="Import-PlateNo" class="form-control">
+                <asp:Dropdown ID="dlPlateNo" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="50"></td>
                 <td width="120">Truck Type :</td>
-                <td><input id="Import-TruckType" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtTruckType" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Driver's Name :</td>
                 <td>
-                <select id="Import-DName" class="form-control">
+                <asp:Dropdown ID="ddlDriverName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                     
                 </td>
-                <td width="50"><span style="padding-left:10px;"> <input id="Import-RDODName" type="radio"></span> is subcon?</td>
+                <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconDriver" runat="server" /></span> is subcon?</td>
                 <td width="120">Driver's Contact No :</td>
-                <td><input id="Import-DCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtDriverContactNo" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Helper's Name :</td>
                 <td>
-                <select id="Import-HName" class="form-control">
+                <asp:Dropdown ID="ddlHelperName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                </select>
+                </asp:Dropdown>
                 </td>
-                 <td width="50"><span style="padding-left:10px;"> <input id="Import-RDOHName" type="radio"></span> is subcon?</td>
+                 <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconHelperName" runat="server" type="radio" /></span> is subcon?</td>
                 <td width="120">Helper's Contact No :</td>
-                <td><input id="Import-HCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtHelperContactNo" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td>Remarks : </td>
-                <td colspan="4"><input id="Import-Remarks" type="text" class="form-control"></td>
+                <td colspan="4"><asp:Textbox ID="txtRemarks" runat="server" CssClass="form-control" /></td>
             </tr>
         </table>
          </div>
-             <div class="modal-footer">
-        <button type="submit" class="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</button>
-        <button type="button" class="btn btn-default">Cancel</button>
+             <div CssClass="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
     </div>
@@ -285,13 +285,13 @@
  <!-- START OF EXPORT TAB -->
 <div id="Export-tab" style="height:100%px;display:none;">
     <center>
-        <h1><span class="glyphicon glyphicon-log-out"></span> Export</h1>
-    <div class="btn-group" style="margin:auto;margin-top:5px;">
-      <button type="button" class="Import-Button btn btn-default"> Import</button>
-      <button type="button" class="Export-Button btn btn-primary active"><span class="glyphicon glyphicon-log-out"></span> Export</button>
-      <button type="button" class="Local-Button btn btn-default"> Local</button>
-      <button type="button" class="Hustling-Button btn btn-default"> Hustling</button>
-      <button type="button" class="Others-Button btn btn-default"> Others</button>
+        <h1><span CssClass="glyphicon glyphicon-log-out"></span> Export</h1>
+    <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+      <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
+      <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-log-out"></span> Export</asp:LinkButton>
+      <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"> Local</asp:LinkButton>
+      <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
+      <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-default"> Others</asp:LinkButton>
     </div>
      </center>
     <div id="form-contents" style="width:95%;height:100%px;margin:auto;margin-top:-15px;margin-bottom:40px;border: 1px solid #e1e1e1;">
@@ -302,10 +302,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div class="input-group">
-                          <input id="Export-DRField" type="text" class="form-control focusedInput" style="width:300px;">
-                          <span class="input-group-btn">
-                            <button id="get-DRInfo" name="get-DRInfo" class="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        <div CssClass="input-group">
+                          <asp:Textbox ID="txtDRNumber" runat="server" CssClass="form-control focusedInput" style="width:300px;"/>
+                          <span CssClass="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -316,40 +316,40 @@
         <table align="center" style="margin-top:30px;">
             <tr>
                 <td width="150">Booking No. :</td>
-                <td><input id="Export-BookingNo" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtBookingNo" runat="server" CssClass="form-control" style="width:300px;" disabled/></td>
                 <td width="50"></td>
                 <td width="120">Shipping Lines Booking No :</td>
-                <td><input id="Export-SLBN" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtShippingLinesBookingNo" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
             <tr height="10"></tr>
            <tr>
                 <td width="120">Shipper :</td>
-                <td><input id="Export-Shipper" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtShipper" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
                 <td width="50"></td>
                 <td width="120">Shipping Lines :</td>
                 <td>
-                    <select id="Export-ShippingLine" class="form-control">
+                    <asp:Dropdown ID="ddlShippingLines" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                </td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">Origin & Destination :</td>
-                <td><input id="Export-OAD" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtOriginDestination" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
                 <td width="50"></td>
                 <td width="120">Commodity :</td>
                 <td>
-                    <input id="Export-Commodity" class="form-control" style="width:300px;">
+                    <asp:Textbox ID="txtCommodity" runat="server" CssClass="form-control" style="width:300px;"/>
                 </td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">Date of Positioning :</td>
                 <td>
-                   <div class="input-group">
-                      <input id="Export-DOP" type="text" data-field="date" date-format="" data-view="Dropdown" class="form-control" style="width:261px;border-right: 0px;">
-                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+                   <div CssClass="input-group">
+                      <asp:Textbox ID="txtDateOfPositioning" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
+                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
                   </div>   
                     
                 </td>
@@ -360,9 +360,9 @@
                 <td width="120">Load Delivery :</td>
                 <td> 
                  
-                  <div class="input-group">
-                      <input id="Export-LoadDelivery" type="text" data-field="date" date-format="" data-view="Dropdown" class="form-control" style="width:261px;border-right: 0px;">
-                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+                  <div CssClass="input-group">
+                      <asp:Textbox ID="txtLoadDelivery" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
+                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                </td>
                 
@@ -371,7 +371,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -388,61 +388,61 @@
             <tr>
                 <td width="120">Trucking :</td>
                 <td width="200">
-                    <select id="Export-Trucking" class="form-control">
+                    <asp:Dropdown ID="ddlTrucking" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="130"></td>
                 <td width="140">Trip Type :</td>
-                <td><input id="Export-TripType" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtTripType" runat="server"  CssClass="form-control" style="width:300px;"/></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td width="120">Plate Number :</td>
                 <td>
-                <select id="Export-PlateNo" class="form-control">
+                <asp:Dropdown ID="ddlPlateNumber" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="50"></td>
                 <td width="120">Truck Type :</td>
-                <td><input id="Export-TruckType"  type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtTruckType" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Driver's Name :</td>
                 <td>
-                <select id="Export-DName" class="form-control">
+                <asp:Dropdown ID="ddlDriverName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                     
                 </td>
-                <td width="50"><span style="padding-left:10px;"> <input id="Export-RDODName" type="radio"></span> is subcon?</td>
+                <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconDriver" runat="server" /></span> is subcon?</td>
                 <td width="120">Driver's Contact No :</td>
-                <td><input id="Export-DCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtDriverContactNo" runat="server" CssClass="form-control" style="width:300px;"/></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Helper's Name :</td>
                 <td>
-                <select id="Export-HName" class="form-control">
+                <asp:Dropdown ID="ddlHelperName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                </select>
+                </asp:Dropdown>
                 </td>
-                 <td width="50"><span style="padding-left:10px;"> <input id="Export-RDOHName" type="radio"></span> is subcon?</td>
+                 <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconHelperName" runat="server" /></span> is subcon?</td>
                 <td width="120">Helper's Contact No :</td>
-                <td><input id="Export-HCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtHelperContactNo" runat="server" CssClass="form-control" style="width:300px;"/></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td>Remarks : </td>
-                <td colspan="4"><input id="Export-Remarks" type="text" class="form-control"></td>
+                <td colspan="4"><asp:Textbox ID="txtRemarks" runat="server"  CssClass="form-control"/></td>
             </tr>
         </table>
         </div>
-             <div class="modal-footer">
-        <button type="submit" class="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</button>
-        <button type="button" class="btn btn-default">Cancel</button>
+             <div CssClass="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
         </div>  
         </form>
     </div>
@@ -452,13 +452,13 @@
 <!-- START OF LOCAL TAB -->
     <div id="Local-tab" style="height:100%px;display:none;">
         <center>
-       <h1><span class="glyphicon glyphicon-bookmark"></span> Local</h1>
-      <div class="btn-group" style="margin:auto;margin-top:5px;">
-      <button type="button" class="Import-Button btn btn-default"> Import</button>
-      <button type="button" class="Export-Button btn btn-default"> Export</button>
-      <button type="button" class="Local-Button btn btn-primary active"><span class="glyphicon glyphicon-bookmark"></span> Local</button>
-      <button type="button" class="Hustling-Button btn btn-default"> Hustling</button>
-      <button type="button" class="Others-Button btn btn-default"> Others</button>
+       <h1><span CssClass="glyphicon glyphicon-bookmark"></span> Local</h1>
+      <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+      <asp:LinkButton ID="Import" runat="server" CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
+      <asp:LinkButton ID="Export" runat="server" CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
+      <asp:LinkButton ID="Local" runat="server" CssClass="Local-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-bookmark"></span> Local</asp:LinkButton>
+      <asp:LinkButton ID="Hustling" runat="server" CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
+      <asp:LinkButton ID="Others" runat="server" CssClass="Others-Button btn btn-default"> Others</asp:LinkButton>
        </div>
      </center>
         
@@ -472,10 +472,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div class="input-group">
-                          <input id="Local-DRField" type="text" class="form-control focusedInput" style="width:300px;">
-                          <span class="input-group-btn">
-                            <button id="get-DRInfo" name="get-DRInfo" class="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        <div CssClass="input-group">
+                          <asp:Textbox ID="txtDRNumber" runat="server" id="Local-DRField"  CssClass="form-control focusedInput" style="width:300px;"/>
+                          <span CssClass="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -486,34 +486,34 @@
         <table align="center" style="margin-top:30px;">
             <tr>
                 <td width="150">Booking No. :</td>
-                <td><input id="Local-BookingNo" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtBookingNo" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
                 <td width="50"></td>
                 <td width="150">Commodity :</td>
-                <td><input id="Local-Commodity" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtCommodity" runat="server" CssClass="form-control" style="width:300px;"/></td>
             </tr>
             <tr height="10"></tr>
            <tr>
                 <td width="120">Shipper :</td>
-                <td><input id="Local-Shipper" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtShipper" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
                 <td width="50"></td>
                 <td>Date of positioning :</td>
                 <td>
-                    <div class="input-group">
-                      <input id="Local-DOP" type="text" data-field="date" date-format="" data-view="Dropdown" class="form-control" style="width:261px;border-right: 0px;">
-                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+                    <div CssClass="input-group">
+                      <asp:Textbox ID="txtDateOfPositiong" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
+                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                </td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">Origin & Destination :</td>
-                <td><input id="Local-OAD" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtOriginDestination" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
                 <td width="50"></td>
                 <td>Loaded Delivery :</td>
                 <td>
-                    <div class="input-group">
-                      <input id="Local-LoadedDelivery" type="text" data-field="date" date-format="" data-view="Dropdown" class="form-control" style="width:261px;border-right: 0px;">
-                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+                    <div CssClass="input-group">
+                      <asp:Textbox ID="txtLoadDelivery" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
+                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                 </td>
             </tr>
@@ -523,7 +523,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -540,61 +540,61 @@
             <tr>
                 <td width="120">Trucking :</td>
                 <td width="200">
-                    <select id="Local-Trucking" class="form-control">
+                    <asp:Dropdown ID="ddlTrucking" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="130"></td>
                 <td width="140">Trip Type :</td>
-                <td><input id="Local-TripType" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtTipType" runat="server"  id="Local-TripType"  CssClass="form-control" style="width:300px;"/></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td width="120">Plate Number :</td>
                 <td>
-                <select id="Local-PlateNo" class="form-control">
+                <asp:Dropdown ID="ddlPlateNumber" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="50"></td>
                 <td width="120">Truck Type :</td>
-                <td><input id="Local-TruckType" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtTruckType" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Driver's Name :</td>
                 <td>
-                <select id="Local-DName" class="form-control">
+                <asp:Dropdown ID="ddlDriverName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                     
                 </td>
-                <td width="50"><span style="padding-left:10px;"> <input id="Local-RDODName" type="radio"></span> is subcon?</td>
+                <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconDriver" runat="server" type="radio"></span> is subcon?</td>
                 <td width="120">Driver's Contact No :</td>
-                <td><input id="Local-DCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtDriverContactno" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Helper's Name :</td>
                 <td>
-                <select id="Local-HName" class="form-control">
+                <asp:Dropdown ID="ddlHelperName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                </select>
+                </asp:Dropdown>
                 </td>
-                 <td width="50"><span style="padding-left:10px;"> <input id="Local-RDOHName" type="radio"></span> is subcon?</td>
+                 <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconHelperName" runat="server" /></span> is subcon?</td>
                 <td width="120">Helper's Contact No :</td>
-                <td><input id="Local-HCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtHelperContactNo" runat="server" CssClass="form-control" style="width:300px;"/></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td>Remarks : </td>
-                <td colspan="4"><input id="Local-Remarks" type="text" class="form-control"></td>
+                <td colspan="4"><asp:Textbox ID="txtRemarks" runat="server" CssClass="form-control"/></td>
             </tr>
         </table>
            </div>
-               <div class="modal-footer">
-        <button type="submit" class="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</button>
-        <button type="button" class="btn btn-default">Cancel</button>
+               <div CssClass="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
       </div>
@@ -605,13 +605,13 @@
     
      <div id="Hustling-tab" style="height:100%px;display:none;">
       <center>
-        <h1><span class="glyphicon glyphicon-sort"></span> Hustling</h1>
-        <div class="btn-group" style="margin:auto;margin-top:5px;">
-      <button type="button" class="Import-Button btn btn-default"> Import</button>
-      <button type="button" class="Export-Button btn btn-default"> Export</button>
-      <button type="button" class="Local-Button btn btn-default"></span> Local</button>
-      <button type="button" class="Hustling-Button btn btn-primary active"><span class="glyphicon glyphicon-sort"></span> Hustling</button>
-      <button type="button" class="Others-Button btn btn-default"> Others</button>
+        <h1><span CssClass="glyphicon glyphicon-sort"></span> Hustling</h1>
+        <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+      <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
+      <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
+      <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"></span> Local</asp:LinkButton>
+      <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-sort"></span> Hustling</asp:LinkButton>
+      <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-default"> Others</asp:LinkButton>
              </div>
      </center>
     
@@ -623,10 +623,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div class="input-group">
-                          <input id="Hustling-DRField" type="text" class="form-control focusedInput" style="width:300px;">
-                          <span class="input-group-btn">
-                            <button id="get-DRInfo" name="get-DRInfo" class="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                        <div CssClass="input-group">
+                          <asp:Textbox ID="txtDRNumber" runat="server" CssClass="form-control focusedInput" style="width:300px;"/>
+                          <span CssClass="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -637,37 +637,37 @@
         <table align="center" style="margin-top:30px;">
             <tr>
                 <td width="150">Booking No. :</td>
-                <td><input id="Hustling-BookingNo" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtbookingNo" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
                 <td width="50"></td>
                 <td width="150">Hustling Type :</td>
                 <td>
-                 <select id="Hustling-HustlingType" class="form-control">
+                 <asp:Dropdown ID="ddlHustlingType" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
             </tr>
             <tr height="10"></tr>
            <tr>
                 <td width="120">Client's Name :</td>
-                <td><input id="Hustling-ClientName" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtClientName" runat="server" CssClass="form-control" style="width:300px;" disabled/></td>
                 <td width="50"></td>
                 <td>Return Depot :</td>
                 <td>
-                     <select id="Hustling-ReturnDepot" class="form-control">
+                     <asp:Dropdown ID="ddlReturnDepot" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>     
+                    </asp:Dropdown>     
                </td>
             </tr>
              <tr height="10"></tr>
            <tr>
                 <td width="120">Origin & Destination :</td>
-                <td><input id="Hustling-OAD" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtOriginDestination" runat="server" CssClass="form-control" style="width:300px;" disabled/></td>
                 <td width="50"></td>
                 <td>Commodity :</td>
                 <td>
-                    <div class="input-group">
-                      <input id="Hustling-Commodity" type="text" data-field="date" data-view="Dropdown" class="form-control" style="width:261px;border-right: 0px;">
-                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
+                    <div CssClass="input-group">
+                      <asp:Textbox ID="txtCommodity" runat="server" data-field="date" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
+                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                 </td>
             </tr>
@@ -677,7 +677,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -694,61 +694,61 @@
             <tr>
                 <td width="120">Trucking :</td>
                 <td width="200">
-                    <select id="Hustling-Trucking" class="form-control">
+                    <asp:Dropdown ID="ddlTrucking" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="130"></td>
                 <td width="140">Trip Type :</td>
-                <td><input id="Hustling-TripType" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtTripType" runat="server" CssClass="form-control" style="width:300px;"/></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td width="120">Plate Number :</td>
                 <td>
-                <select id="Hustling-PlateNo" class="form-control">
+                <asp:Dropdown ID="ddlPlateNumber" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="50"></td>
                 <td width="120">Truck Type :</td>
-                <td><input id="Hustling-TruckType" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtTruckType" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Driver's Name :</td>
                 <td>
-                <select id="Hustling-DName" class="form-control">
+                <asp:Dropdown ID="ddlDriverName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                     
                 </td>
-                <td width="50"><span style="padding-left:10px;"> <input id="Hustling-RDODName" type="radio"></span> is subcon?</td>
+                <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconDriver" runat="server"/></span> is subcon?</td>
                 <td width="120">Driver's Contact No :</td>
-                <td><input id="Hustling-DCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtDriverContactNo" runat="server" CssClass="form-control" style="width:300px;"/></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Helper's Name :</td>
                 <td>
-                <select id="Hustling-HName" class="form-control">
+                <asp:Dropdown ID="ddlHelperName" ranat="server" id="Hustling-HName" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                </select>
+                </asp:Dropdown>
                 </td>
-                 <td width="50"><span style="padding-left:10px;"> <input id="Hustling-RDOHName" type="radio"></span> is subcon?</td>
+                 <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconHelperName" runat="server"/></span> is subcon?</td>
                 <td width="120">Helper's Contact No :</td>
-                <td><input id="Hustling-HCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtHelperContactNo" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td>Remarks : </td>
-                <td colspan="4"><input id="Hustling-Remarks" type="text" class="form-control"></td>
+                <td colspan="4"><asp:Textbox ID="txtRemarks" runat="server" CssClass="form-control"/></td>
             </tr>
         </table>
         </div>
-            <div class="modal-footer">
-        <button type="submit" class="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</button>
-        <button type="button" class="btn btn-default">Cancel</button>
+            <div CssClass="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
     </div>
@@ -761,13 +761,13 @@
 <!-- START OF OTHERS TAB -->
 <div id="Others-tab" style="height:100%px;display:none;">
      <center>
-        <h1><span class="glyphicon glyphicon-asterisk"></span> Others</h1>
-    <div class="btn-group" style="margin:auto;margin-top:5px;">
-      <button type="button" class="Import-Button btn btn-default"> Import</button>
-      <button type="button" class="Export-Button btn btn-default"> Export</button>
-      <button type="button" class="Local-Button btn btn-default"></span> Local</button>
-      <button type="button" class="Hustling-Button btn btn-default"> Hustling</button>
-      <button type="button" class="Others-Button btn btn-primary active"><span class="glyphicon glyphicon-asterisk"></span> Others</button>
+        <h1><span CssClass="glyphicon glyphicon-asterisk"></span> Others</h1>
+    <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+      <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
+      <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
+      <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"></span> Local</asp:LinkButton>
+      <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
+      <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-asterisk"></span> Others</asp:LinkButton>
     </div>
      </center>
     
@@ -779,27 +779,27 @@
         <table align="center" style="margin-top:30px;">
             <tr>
                 <td width="150">Booking No. :</td>
-                <td><input id="Others-BookingNo" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtBookingNo" runat="server" CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
             <tr height="10">
             </tr>
             <tr>
                 <td width="150">Requested By :</td>
-                <td><input id="Others-RequestBy" type="text" class="form-control" style="width:300px;" ></td>
+                <td><asp:Textbox ID="txtRequestBy" runat="server" CssClass="form-control" style="width:300px;" /></td>
                 <td width="50"></td>
                 <td width="150">Contact Number :</td>
                 <td>
-                 <input id="Others-ContactNo" type="text" class="form-control" style="width:300px;">
+                 <asp:Textbox ID="txtContactNumber" runat="server" CssClass="form-control" style="width:300px;" />
                 </td>
             </tr>
             <tr height="10"></tr>
            <tr>
                 <td width="120">Origin :</td>
-                <td><input id="Others-Origin" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtOrigin" runat="server" CssClass="form-control" style="width:300px;" /></td>
                 <td width="50"></td>
                 <td>Destination :</td>
                 <td>
-                   <input id="Others-Destination" type="text" class="form-control" style="width:300px;">    
+                   <asp:Textbox ID="txtDestination" runat="server" CssClass="form-control" style="width:300px;" />    
                </td>
             </tr>
             <tr height="10"></tr>
@@ -807,14 +807,14 @@
 
                 <td>Commodity :</td>
                 <td>
-                   <input id="Others-Commodity" type="text" class="form-control" style="width:300px;">    
+                   <asp:Textbox ID="txtCommodity" runat="server" CssClass="form-control" style="width:300px;" />    
                </td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td valign="top">Remarks : </td>
                 <td colspan="4">
-                <textarea id="Others-Remarks" class="form-control" rows="3"></textarea>
+                <asp:Textbox ID="txtRemarks" ranat="server" TextMode="multiline" CssClass="form-control" rows="3"></asp:Textbox>
                 </td>
             </tr>
            
@@ -823,7 +823,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -834,68 +834,68 @@
                 <td>Sample Data</td>            
             </tr>
         </table>
-        <button id="Others-AddField" class="btn btn-primary pull-right" style="width:150px;margin-top:20px;margin-bottom:20px;margin-right:22px;"><span class="glyphicon glyphicon-plus-sign" style=""></span> Add</button>
+        <asp:LinkButton ID="" runat="server"  id="Others-AddField" CssClass="btn btn-primary pull-right" style="width:150px;margin-top:20px;margin-bottom:20px;margin-right:22px;"><span CssClass="glyphicon glyphicon-plus-sign" style=""></span> Add</asp:LinkButton>
         <br/><br/>
         <h4 style="padding-top:10px;">Truck Allocation</h4>
         <table align="center" style="margin-top:30px;">
             <tr>
                 <td width="120">Trucking :</td>
                 <td width="200">
-                    <select id="Others-Trucking" class="form-control">
+                    <asp:Dropdown ID="ddlTrucking" ranat="server" id="Others-Trucking" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="130"></td>
                 <td width="140">Trip Type :</td>
-                <td><input id="Others-TripType" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtTripType" runat="server" CssClass="form-control" style="width:300px;"/></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td width="120">Plate Number :</td>
                 <td>
-                <select id="Others-PlateNo" class="form-control">
+                <asp:Dropdown ID="ddlPlateNumber" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                 </td>
                 <td width="50"></td>
                 <td width="120">Truck Type :</td>
-                <td><input id="Others-TruckType" type="text" class="form-control" style="width:300px;" disabled></td>
+                <td><asp:Textbox ID="txtTructType" runat="server"  CssClass="form-control" style="width:300px;" disabled /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Driver's Name :</td>
                 <td>
-                <select id="Others-DName" class="form-control">
+                <asp:Dropdown ID="ddlDriverName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                    </select>
+                    </asp:Dropdown>
                     
                 </td>
-                <td width="50"><span style="padding-left:10px;"> <input id="Others-RDODName" type="radio"></span> is subcon?</td>
+                <td width="50"><span style="padding-left:10px;"> <asp:Checkbox ID="chkIsSubconDriver" runat="server"/></span> is subcon?</td>
                 <td width="120">Driver's Contact No :</td>
-                <td><input id="Others-DCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtDriverContactNo" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
              <tr height="10"></tr>
             <tr>
                 <td width="120">Helper's Name :</td>
                 <td>
-                <select id="Others-HName" class="form-control">
+                <asp:Dropdown ID="ddlHelperName" ranat="server" CssClass="form-control">
                       <option>DB bind (Dropdown)</option>
-                </select>
+                </asp:Dropdown>
                 </td>
-                 <td width="50"><span style="padding-left:10px;"> <input id="Others-RDOHName" type="radio"></span> is subcon?</td>
+                 <td width="50"><span style="padding-left:10px;"> <asp:Textbox ID="chkIsSubconHelperName" runat="server" /></span> is subcon?</td>
                 <td width="120">Helper's Contact No :</td>
-                <td><input id="Others-HCNO" type="text" class="form-control" style="width:300px;"></td>
+                <td><asp:Textbox ID="txtHelperContactNo" runat="server" CssClass="form-control" style="width:300px;" /></td>
             </tr>
             <tr height="10"></tr>
             <tr>
                 <td>Remarks : </td>
-                <td colspan="4"><input id="Others-Remarks" type="text" class="form-control"></td>
+                <td colspan="4"><asp:Textbox ID="txtRemarks" runat="server" CssClass="form-control" /></td>
             </tr>
         </table>
         </div>
-        <div class="modal-footer">
-        <button type="submit" class="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</button>
-        <button type="button" class="btn btn-default">Cancel</button>
+        <div CssClass="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
     </div>
@@ -912,11 +912,11 @@
 <div id="dtBox"></div>	
 		
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
+<div CssClass="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div CssClass="modal-dialog">
+    <div CssClass="modal-content">
     
-      <div class="modal-body" style="height:220px;">
+      <div CssClass="modal-body" style="height:220px;">
           
               <table border="0" align="center" style="margin-top:20px;">
                 <tr>
@@ -927,9 +927,9 @@
                 </tr>
               </table>
       </div>  
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Logout</button>
+      <div CssClass="modal-footer">
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" data-dismiss="modal">Close</asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-primary">Logout</asp:LinkButton>
       </div>
     </div>
   </div>
