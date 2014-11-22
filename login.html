@@ -14,27 +14,27 @@
 </head>
 
 <body>
-<div CssClass="container" CssClass="center-block">
+<div class="container" CssClass="center-block">
     
-    <div CssClass="center-block" style="width:300px;margin-top:10%;">
+    <div class="center-block" style="width:300px;margin-top:10%;">
           
         <div id="dispatch-logo"><center><img src="images/idispatch.png"></center></div>
                 <form id="dispatch-form" method="post" action="LOGIN SCRIPT" role="form" style="padding-top:50px;">  
              
-                    <div CssClass="form-group">
+                    <div class="form-group">
                      <asp:Textbox ID="txtUsername" ranat="server" name="username" CssClass="form-control " placeholder="Username"/>
                     </div>
-                    <div CssClass="form-group">
+                    <div class="form-group">
                     <asp:Textbox ID="txtPassword" ranat="server" name="password" CssClass="form-control" placeholder="Password"/>
                     </div>
-                    <div CssClass="form-group">
-                        <div CssClass="pull-left">
+                    <div class="form-group">
+                        <div class="pull-left">
                       
                              <asp:LinkButton ID="" ranat="server" id="forgot-pass" type="button" CssClass="btn btn-default btn-link" style="border: none; outline:none;">
-  <span CssClass="glyphicon glyphicon glyphicon-lock"></span> Forgot password?
+  <span class="glyphicon glyphicon glyphicon-lock"></span> Forgot password?
 </asp:LinkButton>
                             </div>
-                         <div CssClass="pull-right">
+                         <div class="pull-right">
                             <asp:LinkButton ID="" ranat="server" id="signin" name="signin" type="submit" CssClass="btn btn-primary ">Sign in</asp:LinkButton>
                             </div>
                     
@@ -43,21 +43,21 @@
     </div>  
    
 </div>
-<div CssClass="container">
+<div class="container">
     <form id="forgot-passform" method="post" action="FORGOT PASS SCRIPT" role="form" style="display:none;margin-top:50px;">
                     <h3 CssClass="text-center">Forgot your password?</h3> 
-                     <p CssClass="text-center">Request a new one by entering your email address</p> <br/>
+                     <p class="text-center">Request a new one by entering your email address</p> <br/>
                    <div style="width:400px;margin:auto;">
-                       <div CssClass="center-block col-lg-12">
-                            <div CssClass="input-group">
+                       <div class="center-block col-lg-12">
+                            <div class="input-group">
                               <asp:Textbox ID="txtForgotPass" ranat="server" type="email" placeholder="Enter email" CssClass="form-control" style="height:40px;"/>
-                              <span CssClass="input-group-btn">
+                              <span class="input-group-btn">
                                 <asp:LinkButton ID="" ranat="server" id="send-forgotrequest" name="send-forgotrequest" CssClass="btn btn-info" type="button" style="height:40px;">Request</asp:LinkButton>
                               </span>
                             </div>
-                            <div CssClass="form-group">
+                            <div class="form-group">
                       <asp:LinkButton ID="" ranat="server" id="goback-login" type="button" CssClass="btn btn-default btn-link" style="border: none; outline:none;">
-  <span CssClass="glyphicon glyphicon-chevron-left" style="margin-top:10px;"></span> Go back to login
+  <span class="glyphicon glyphicon-chevron-left" style="margin-top:10px;"></span> Go back to login
 </asp:LinkButton>
                            </div>
                       </div>
@@ -68,9 +68,9 @@
 </div> 
     
 <div id="error-messages" style="height:20px;width:400px;margin:auto;padding-top:40px;">
-    <div CssClass="alert alert-danger" role="alert" style="display:none;">
-        <span CssClass="alert-link">User and password doesn't match</span>
-    <span CssClass="glyphicon glyphicon-info-sign pull-right"></span>
+    <div class="alert alert-danger" role="alert" style="display:none;">
+        <span class="alert-link">User and password doesn't match</span>
+    <span class="glyphicon glyphicon-info-sign pull-right"></span>
     </div>
 </div> 
 

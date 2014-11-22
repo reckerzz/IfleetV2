@@ -13,42 +13,42 @@
     
     <link rel="stylesheet" type="text/css" href="src/DateTimePicker.css" />
     <script type="text/javascript" src="src/DateTimePicker.js"></script> 
-	
-		<!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
-			<script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
-		<![endif]-->
+  
+    <!--[if lt IE 9]>
+      <link rel="stylesheet" type="text/css" href="../src/DateTimePicker-ltie9.css" />
+      <script type="text/javascript" src="../src/DateTimePicker-ltie9.js"></script>
+    <![endif]-->
  
 </head>
 
 <body>
-  <div CssClass="navigation-formatter">
-        <div CssClass="container center-block navbar nav-addAttr" role="navigation">
+  <div class="navigation-formatter">
+        <div class="container center-block navbar nav-addAttr" role="navigation">
        <img id="inland-logo" src="images/new_inlandlogo.png" height="50" style="margin-top:-7px;">
         
             
             
         
-            <div CssClass="btn-group" style="margin-left:40px;">
+            <div class="btn-group" style="margin-left:40px;">
                 
                   <asp:LinkButton ID="" runat="server"  id="menu-home"  CssClass="btn btn-default" style="border: none; outline:none;">
-                  <span CssClass="glyphicon glyphicon-home"></span> <span CssClass="hidden-xs">Home</span></asp:LinkButton> 
+                  <span class="glyphicon glyphicon-home"></span> <span class="hidden-xs">Home</span></asp:LinkButton> 
              </div>
-             <div CssClass="btn-group">
+             <div class="btn-group">
                
                   <asp:LinkButton ID="" runat="server"   CssClass="btn navbar-btn dropdown-toggle active-styler" data-toggle="dropdown" style="border: none; outline:none;">
-                     <span CssClass="glyphicon glyphicon-transfer"></span> <span CssClass="hidden-xs">Transaction </span><span CssClass="caret"></span>
+                     <span class="glyphicon glyphicon-transfer"></span> <span class="hidden-xs">Transaction </span><span class="caret"></span>
                   </asp:LinkButton>
-                  <ul CssClass="dropdown-menu multi-level" role="menu">
-                    <li role="presentation" CssClass="dropdown-header">Booking</li>
+                  <ul class="dropdown-menu multi-level" role="menu">
+                    <li role="presentation" Class="dropdown-header">Booking</li>
                     <li><a id="menu-booking-CN" href="#">Create New</a></li>
                     <li><a id="menu-booking-AL" href="#">All Listing</a></li>
-                    <li CssClass="divider"></li>
-                    <li role="presentation" CssClass="dropdown-header">Receiving</li>
+                    <li class="divider"></li>
+                    <li role="presentation" Class="dropdown-header">Receiving</li>
     
-                   <li CssClass="dropdown-submenu">
+                   <li class="dropdown-submenu">
                     <a tabindex="-1" href="#">EIR</a>
-                    <ul CssClass="dropdown-menu">
+                    <ul class="dropdown-menu">
                         <li><a id="menu-eir-CN" tabindex="-1" href="#">Create New</a></li>
                         <li><a id="menu-eir-AL" href="#">All Listing</a></li>
                     </ul>
@@ -56,18 +56,18 @@
                  </ul>
 
             </div>
-             <div CssClass="btn-group">
+             <div class="btn-group">
                   <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
-                  <span CssClass="glyphicon glyphicon-wrench"></span> <span CssClass="hidden-xs">Maintenance</span> <span CssClass="caret"></span></asp:LinkButton>
-                 <ul CssClass="dropdown-menu multi-level" role="menu">
+                  <span class="glyphicon glyphicon-wrench"></span> <span class="hidden-xs">Maintenance</span> <span class="caret"></span></asp:LinkButton>
+                 <ul class="dropdown-menu multi-level" role="menu">
                     <li><a id="menu-maintenance-DH" href="#">Driver/Helper</a></li>
                     <li><a id="menu-maintenance-chassis" href="#">Chassis</a></li>
                  </ul>
              </div>
-            <div CssClass="btn-group">
+            <div class="btn-group">
                   <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown" style="border: none; outline:none;margin-top:5px;">
-                  <span CssClass="glyphicon glyphicon-folder-open" style="padding-right:5px;"></span><span CssClass="hidden-xs"> Report  </span><span CssClass="caret" style="margin-left:5px;"></span></asp:LinkButton>
-                  <ul CssClass="dropdown-menu multi-level" role="menu">
+                  <span class="glyphicon glyphicon-folder-open" style="padding-right:5px;"></span><span class="hidden-xs"> Report  </span><span class="caret" style="margin-left:5px;"></span></asp:LinkButton>
+                  <ul class="dropdown-menu multi-level" role="menu">
                       <li><a id="menu-report-container" href="#">Container</a></li>
                       <li><a id="menu-report-chassis" href="#">Chassis</a></li>
                       <li><a id="menu-report-ContainerAging" href="#">Container Aging</a></li>
@@ -75,17 +75,17 @@
                   </ul>
              </div>
 
-    <div CssClass="btn-group pull-right mech-power-buttons">
-        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" data-toggle="dropdown"><span CssClass="glyphicon glyphicon-cog"></span></asp:LinkButton>
+    <div class="btn-group pull-right mech-power-buttons">
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span></asp:LinkButton>
         
-                  <ul CssClass="dropdown-menu multi-level" role="menu">
-                    <li role="presentation" CssClass="dropdown-header">Preferences</li>
+                  <ul class="dropdown-menu multi-level" role="menu">
+                    <li role="presentation" Class="dropdown-header">Preferences</li>
                     <li><a id="menu-password" href="#">Change Password</a></li>
                  </ul>
         
-        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" style="background-color: #7c858f;color:white;border: 1px solid #7c858f;" data-toggle="modal" data-target="#myModal"><span CssClass="glyphicon glyphicon-off"></span></asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" style="background-color: #7c858f;color:white;border: 1px solid #7c858f;" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-off"></span></asp:LinkButton>
     </div>
-          <p CssClass="navbar-text navbar-right visible-lg Signed-user">Signed in as <span id="USERNAME VAR"><a href="#" CssClass="navbar-link">Rex Cabarloc</a></span></p>    
+          <p class="navbar-text navbar-right visible-lg Signed-user">Signed in as <span id="USERNAME VAR"><a href="#" Class="navbar-link">Rex Cabarloc</a></span></p>    
     
         </div>
     </div>
@@ -94,23 +94,23 @@
     
 <div id="booking-container" CssClass="container">    
  <div id="error-message" CssClass="alert alert-warning alert-dismissible" role="alert" style="margin-top:30px;display:none;">
-  <asp:LinkButton ID="" runat="server"   CssClass="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span CssClass="sr-only">Close</span></asp:LinkButton>
+  <asp:LinkButton ID="" runat="server"   CssClass="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></asp:LinkButton>
   <strong>Warning!</strong>
 </div>
 <div id="main-container" CssClass="roundtify clearfix-lg" style="margin:auto;background-color:#ffffff;border: 1px solid #d6d6d6;margin-top:40px;margin-bottom:50px;">
   
     
      <div style="padding-left:20px;padding-right:20px;border-bottom: 1px solid #e1e1e1;">   
-    <h3>Booking<span CssClass="glyphicon glyphicon-chevron-right" style="font-size:0.6em;padding-left:5px;vertical-align: 2px;"></span><span style="padding-left:8px;">Create</span>  <span CssClass="glyphicon glyphicon-tasks pull-right"></span></h3>
+    <h3>Booking<span class="glyphicon glyphicon-chevron-right" style="font-size:0.6em;padding-left:5px;vertical-align: 2px;"></span><span style="padding-left:8px;">Create</span>  <span class="glyphicon glyphicon-tasks pull-right"></span></h3>
     </div>
     
 
     
     <div id="Import-tab" style="height:100%px;"> <!--IMPORT TAB START-->
           <center>
-            <h1><span CssClass="glyphicon glyphicon-log-in"></span> Import</h1>
-        <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
-          <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-log-in"></span> Import</asp:LinkButton>
+            <h1><span class="glyphicon glyphicon-log-in"></span> Import</h1>
+        <div class="btn-group" style="margin:auto;margin-top:5px;">
+          <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-primary active"><span class="glyphicon glyphicon-log-in"></span> Import</asp:LinkButton>
           <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
           <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"> Local</asp:LinkButton>
           <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
@@ -127,10 +127,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div CssClass="input-group">
+                        <div class="input-group">
                           <asp:TextBox ID="txtDRNumber" runat="server"  CssClass="form-control focusedInput" style="width:300px;"/>
-                          <span CssClass="input-group-btn">
-                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
+                          <span class="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -154,9 +154,9 @@
                 <td width="50"></td>
                 <td width="120">Date of Delivery :</td>
                 <td>
-               <div CssClass="input-group">
+               <div class="input-group">
                       <asp:TextBox ID="" runat="server" id="txtDOD" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
-                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>   
                </td>
             </tr>
@@ -197,7 +197,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Date of Pull Out</th>
             <th>Seal No.</th>
@@ -273,8 +273,8 @@
             </tr>
         </table>
          </div>
-             <div CssClass="modal-footer">
-        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+             <div class="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
         <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
@@ -285,10 +285,10 @@
  <!-- START OF EXPORT TAB -->
 <div id="Export-tab" style="height:100%px;display:none;">
     <center>
-        <h1><span CssClass="glyphicon glyphicon-log-out"></span> Export</h1>
-    <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+        <h1><span class="glyphicon glyphicon-log-out"></span> Export</h1>
+    <div class="btn-group" style="margin:auto;margin-top:5px;">
       <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
-      <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-log-out"></span> Export</asp:LinkButton>
+      <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-primary active"><span class="glyphicon glyphicon-log-out"></span> Export</asp:LinkButton>
       <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"> Local</asp:LinkButton>
       <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
       <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-default"> Others</asp:LinkButton>
@@ -302,10 +302,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div CssClass="input-group">
+                        <div class="input-group">
                           <asp:Textbox ID="txtDRNumber" runat="server" CssClass="form-control focusedInput" style="width:300px;"/>
-                          <span CssClass="input-group-btn">
-                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
+                          <span class="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -347,9 +347,9 @@
            <tr>
                 <td width="120">Date of Positioning :</td>
                 <td>
-                   <div CssClass="input-group">
+                   <div class="input-group">
                       <asp:Textbox ID="txtDateOfPositioning" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
-                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>   
                     
                 </td>
@@ -360,9 +360,9 @@
                 <td width="120">Load Delivery :</td>
                 <td> 
                  
-                  <div CssClass="input-group">
+                  <div class="input-group">
                       <asp:Textbox ID="txtLoadDelivery" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
-                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                </td>
                 
@@ -371,7 +371,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -440,8 +440,8 @@
             </tr>
         </table>
         </div>
-             <div CssClass="modal-footer">
-        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+             <div class="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
         <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
         </div>  
         </form>
@@ -452,11 +452,11 @@
 <!-- START OF LOCAL TAB -->
     <div id="Local-tab" style="height:100%px;display:none;">
         <center>
-       <h1><span CssClass="glyphicon glyphicon-bookmark"></span> Local</h1>
-      <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+       <h1><span class="glyphicon glyphicon-bookmark"></span> Local</h1>
+      <div class="btn-group" style="margin:auto;margin-top:5px;">
       <asp:LinkButton ID="Import" runat="server" CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
       <asp:LinkButton ID="Export" runat="server" CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
-      <asp:LinkButton ID="Local" runat="server" CssClass="Local-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-bookmark"></span> Local</asp:LinkButton>
+      <asp:LinkButton ID="Local" runat="server" CssClass="Local-Button btn btn-primary active"><span class="glyphicon glyphicon-bookmark"></span> Local</asp:LinkButton>
       <asp:LinkButton ID="Hustling" runat="server" CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
       <asp:LinkButton ID="Others" runat="server" CssClass="Others-Button btn btn-default"> Others</asp:LinkButton>
        </div>
@@ -472,10 +472,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div CssClass="input-group">
+                        <div class="input-group">
                           <asp:Textbox ID="txtDRNumber" runat="server" id="Local-DRField"  CssClass="form-control focusedInput" style="width:300px;"/>
-                          <span CssClass="input-group-btn">
-                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
+                          <span class="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -498,9 +498,9 @@
                 <td width="50"></td>
                 <td>Date of positioning :</td>
                 <td>
-                    <div CssClass="input-group">
+                    <div class="input-group">
                       <asp:Textbox ID="txtDateOfPositiong" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
-                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                </td>
             </tr>
@@ -511,9 +511,9 @@
                 <td width="50"></td>
                 <td>Loaded Delivery :</td>
                 <td>
-                    <div CssClass="input-group">
+                    <div class="input-group">
                       <asp:Textbox ID="txtLoadDelivery" runat="server" data-field="date" date-format="" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
-                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                 </td>
             </tr>
@@ -523,7 +523,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -592,8 +592,8 @@
             </tr>
         </table>
            </div>
-               <div CssClass="modal-footer">
-        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+               <div class="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
         <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
@@ -605,12 +605,12 @@
     
      <div id="Hustling-tab" style="height:100%px;display:none;">
       <center>
-        <h1><span CssClass="glyphicon glyphicon-sort"></span> Hustling</h1>
-        <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+        <h1><span class="glyphicon glyphicon-sort"></span> Hustling</h1>
+        <div class="btn-group" style="margin:auto;margin-top:5px;">
       <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
       <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
       <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"></span> Local</asp:LinkButton>
-      <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-sort"></span> Hustling</asp:LinkButton>
+      <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-primary active"><span class="glyphicon glyphicon-sort"></span> Hustling</asp:LinkButton>
       <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-default"> Others</asp:LinkButton>
              </div>
      </center>
@@ -623,10 +623,10 @@
                     <tr>
                     <td width="120">DR Number :</td>
                     <td>
-                        <div CssClass="input-group">
+                        <div class="input-group">
                           <asp:Textbox ID="txtDRNumber" runat="server" CssClass="form-control focusedInput" style="width:300px;"/>
-                          <span CssClass="input-group-btn">
-                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span CssClass="glyphicon glyphicon-search"></span></asp:LinkButton>
+                          <span class="input-group-btn">
+                            <asp:LinkButton ID="" runat="server"  id="get-DRInfo" name="get-DRInfo" CssClass="btn btn-primary focusedInput" type="submit"><span class="glyphicon glyphicon-search"></span></asp:LinkButton>
                           </span>
                         </div>
                     </td>
@@ -665,9 +665,9 @@
                 <td width="50"></td>
                 <td>Commodity :</td>
                 <td>
-                    <div CssClass="input-group">
+                    <div class="input-group">
                       <asp:Textbox ID="txtCommodity" runat="server" data-field="date" data-view="Dropdown" CssClass="form-control" style="width:261px;border-right: 0px;"/>
-                      <span CssClass="input-group-addon" style="background-color:white;border-left: 0px;"><span CssClass="glyphicon glyphicon-calendar"></span></span>
+                      <span class="input-group-addon" style="background-color:white;border-left: 0px;"><span class="glyphicon glyphicon-calendar"></span></span>
                   </div>        
                 </td>
             </tr>
@@ -677,7 +677,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -746,8 +746,8 @@
             </tr>
         </table>
         </div>
-            <div CssClass="modal-footer">
-        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+            <div class="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
         <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
@@ -761,13 +761,13 @@
 <!-- START OF OTHERS TAB -->
 <div id="Others-tab" style="height:100%px;display:none;">
      <center>
-        <h1><span CssClass="glyphicon glyphicon-asterisk"></span> Others</h1>
-    <div CssClass="btn-group" style="margin:auto;margin-top:5px;">
+        <h1><span class="glyphicon glyphicon-asterisk"></span> Others</h1>
+    <div class="btn-group" style="margin:auto;margin-top:5px;">
       <asp:LinkButton ID="Import" runat="server"   CssClass="Import-Button btn btn-default"> Import</asp:LinkButton>
       <asp:LinkButton ID="Export" runat="server"   CssClass="Export-Button btn btn-default"> Export</asp:LinkButton>
       <asp:LinkButton ID="Local" runat="server"   CssClass="Local-Button btn btn-default"></span> Local</asp:LinkButton>
       <asp:LinkButton ID="Hustling" runat="server"   CssClass="Hustling-Button btn btn-default"> Hustling</asp:LinkButton>
-      <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-primary active"><span CssClass="glyphicon glyphicon-asterisk"></span> Others</asp:LinkButton>
+      <asp:LinkButton ID="Others" runat="server"   CssClass="Others-Button btn btn-primary active"><span class="glyphicon glyphicon-asterisk"></span> Others</asp:LinkButton>
     </div>
      </center>
     
@@ -823,7 +823,7 @@
         </table>
          <h4 style="padding-top:10px;">Container Details</h4>
         
-        <table CssClass="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
+        <table class="table table-striped table-bordered" style="width:98%;margin:auto;margin-left:0px;">
             <th>Container No.</th>
             <th>Seal No.</th>
             <th>Size</th>
@@ -834,7 +834,7 @@
                 <td>Sample Data</td>            
             </tr>
         </table>
-        <asp:LinkButton ID="" runat="server"  id="Others-AddField" CssClass="btn btn-primary pull-right" style="width:150px;margin-top:20px;margin-bottom:20px;margin-right:22px;"><span CssClass="glyphicon glyphicon-plus-sign" style=""></span> Add</asp:LinkButton>
+        <asp:LinkButton ID="" runat="server"  id="Others-AddField" CssClass="btn btn-primary pull-right" style="width:150px;margin-top:20px;margin-bottom:20px;margin-right:22px;"><span class="glyphicon glyphicon-plus-sign" style=""></span> Add</asp:LinkButton>
         <br/><br/>
         <h4 style="padding-top:10px;">Truck Allocation</h4>
         <table align="center" style="margin-top:30px;">
@@ -893,8 +893,8 @@
             </tr>
         </table>
         </div>
-        <div CssClass="modal-footer">
-        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span CssClass="glyphicon icon-ok-sign" style></span><span CssClass="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
+        <div class="modal-footer">
+        <asp:LinkButton ID="" runat="server"  type="submit" CssClass="btn btn-primary"><span class="glyphicon icon-ok-sign" style></span><span class="glyphicon glyphicon-ok" style="padding-right:5px;"></span> Add Record</asp:LinkButton>
         <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default">Cancel</asp:LinkButton>
       </div>  
     </form>
@@ -909,14 +909,14 @@
 </div> <!--main container-->
 </div> <!--main container-->
   
-<div id="dtBox"></div>	
-		
-
-<div CssClass="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div CssClass="modal-dialog">
-    <div CssClass="modal-content">
+<div id="dtBox"></div>  
     
-      <div CssClass="modal-body" style="height:220px;">
+
+<div Class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div Class="modal-dialog">
+    <div Class="modal-content">
+    
+      <div Class="modal-body" style="height:220px;">
           
               <table border="0" align="center" style="margin-top:20px;">
                 <tr>
@@ -927,7 +927,7 @@
                 </tr>
               </table>
       </div>  
-      <div CssClass="modal-footer">
+      <div class="modal-footer">
         <asp:LinkButton ID="" runat="server"   CssClass="btn btn-default" data-dismiss="modal">Close</asp:LinkButton>
         <asp:LinkButton ID="" runat="server"   CssClass="btn btn-primary">Logout</asp:LinkButton>
       </div>
